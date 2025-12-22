@@ -213,7 +213,9 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
 
           <FadeInView delay={0.2}>
             <Link
-              href="/#contact"
+              href="https://t.me/samscasm"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-medium hover:opacity-90 transition-opacity"
             >
               Get in Touch
