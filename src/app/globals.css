@@ -1,26 +1,127 @@
 @import "tailwindcss";
 
+/* Light mode (default) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 255 255 255;
+  --foreground: 0 0 0;
+  --shadow-color: 0 0 0;
+}
+
+/* Dark mode */
+.dark {
+  --background: 0 0 0;
+  --foreground: 255 255 255;
+  --shadow-color: 255 255 255;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --color-shadow: rgb(var(--shadow-color));
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Selection styling */
+::selection {
+  background: rgb(var(--foreground));
+  color: rgb(var(--background));
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid rgb(var(--foreground));
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--foreground) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--foreground) / 0.5);
+}
+
+/* Brutal shadow utilities */
+.shadow-brutal {
+  box-shadow: 4px 4px 0px 0px rgb(var(--shadow-color));
+}
+
+.shadow-brutal-sm {
+  box-shadow: 2px 2px 0px 0px rgb(var(--shadow-color));
+}
+
+.shadow-brutal-lg {
+  box-shadow: 8px 8px 0px 0px rgb(var(--shadow-color));
+}
+
+.shadow-brutal-hover {
+  box-shadow: 6px 6px 0px 0px rgb(var(--shadow-color));
+}
+
+/* Border utilities */
+.border-foreground {
+  border-color: rgb(var(--foreground));
+}
+
+.bg-foreground {
+  background-color: rgb(var(--foreground));
+}
+
+.bg-background {
+  background-color: rgb(var(--background));
+}
+
+.text-foreground {
+  color: rgb(var(--foreground));
+}
+
+.text-background {
+  color: rgb(var(--background));
+}
+
+/* Opacity variants */
+.text-foreground\/80 {
+  color: rgb(var(--foreground) / 0.8);
+}
+
+.text-foreground\/60 {
+  color: rgb(var(--foreground) / 0.6);
+}
+
+.text-foreground\/40 {
+  color: rgb(var(--foreground) / 0.4);
+}
+
+.border-foreground\/20 {
+  border-color: rgb(var(--foreground) / 0.2);
+}
+
+.border-foreground\/10 {
+  border-color: rgb(var(--foreground) / 0.1);
 }
