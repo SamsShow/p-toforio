@@ -312,3 +312,214 @@ export const siteConfig = {
     "Building Web3 infrastructure and premium interfaces. Co-founder at DonaLabs, Aptos Accelerator alum (AptosX402).",
   url: "https://sakshamtyagi.com",
 };
+
+// ===========================================
+// ACHIEVEMENTS DATA
+// ===========================================
+
+export interface Achievement {
+  icon: "trophy" | "dollar" | "star" | "graduation";
+  title: string;
+  project: string;
+  description: string;
+  tags: string[];
+}
+
+export const achievements: Achievement[] = [
+  {
+    icon: "trophy",
+    title: "Aptos WinterSchool Winner",
+    project: "AptosX402",
+    description:
+      "Built an AI-powered sentiment trading agent on Aptos using the x402 micropayments stack.",
+    tags: ["2nd Place", "Aptos", "AI/Sentiment", "Prize $5K"],
+  },
+  {
+    icon: "trophy",
+    title: "Aptos Assembly S2",
+    project: "AptosX402",
+    description: "Selected into the Aptos Assembly Season 2 program.",
+    tags: ["Aptos Assembly", "Cohort"],
+  },
+  {
+    icon: "trophy",
+    title: "Move AI Hackathon",
+    project: "HypeFlow AI",
+    description:
+      "Awarded $4,000 for an autonomous AI trading agent on Aptos that optimizes DeFi portfolio management.",
+    tags: ["3rd Place", "Aptos", "AI"],
+  },
+  {
+    icon: "dollar",
+    title: "MSME Indeathon 4.0 Grant",
+    project: "EnerXchange",
+    description:
+      "Secured $14,000 to accelerate deployment of a decentralized energy trading platform across microgrids.",
+    tags: ["Grant", "Energy", "Chainlink"],
+  },
+  {
+    icon: "dollar",
+    title: "Aptos Foundation Grant",
+    project: "HypeFlow AI",
+    description:
+      "Received $900 to advance AI-driven trading and integrate algorithms with Aptos blockchain infrastructure.",
+    tags: ["Grant", "Aptos"],
+  },
+  {
+    icon: "trophy",
+    title: "QuickNode BuildOn Hackathon",
+    project: "GasSaverX",
+    description:
+      "Won $2,000 in PYUSD integrating PayPal PYUSD payments and blockchain analytics for GasSaverX.",
+    tags: ["3rd Place", "Payments", "QuickNode"],
+  },
+  {
+    icon: "trophy",
+    title: "ideaTON by TON Society",
+    project: "TONfi",
+    description:
+      "Earned 2nd place with a $180 prize for promoting financial innovation in the TON ecosystem.",
+    tags: ["2nd Place", "TON", "DeFi"],
+  },
+  {
+    icon: "trophy",
+    title: "GFG HackFest",
+    project: "Sustainability DApp",
+    description:
+      "Recognized with a $200 prize for a Web3 project focused on sustainable development.",
+    tags: ["2nd Place", "Sustainability", "Web3"],
+  },
+  {
+    icon: "trophy",
+    title: "Aurora Hack The Spectrum",
+    project: "Deva the Devcon Unicorn",
+    description:
+      "Won the Potential Project Award with an $80 prize as a solo contestant building on Aurora.",
+    tags: ["Award", "Aurora", "Solo"],
+  },
+  {
+    icon: "star",
+    title: "IIT Delhi UX Hackathon",
+    project: "UX Case Challenge",
+    description:
+      "Placed in the Top 10 among 170 teams in a rigorous two-round UX hackathon at IIT Delhi.",
+    tags: ["Top 10", "UX", "Design"],
+  },
+  {
+    icon: "graduation",
+    title: "Ethereum Developer Degree",
+    project: "LearnWeb3 Program",
+    description:
+      "Completed the comprehensive Ethereum Developer Degree, demonstrating proficiency in blockchain development.",
+    tags: ["Certification", "Ethereum", "Web3"],
+  },
+];
+
+// ===========================================
+// STATS DATA (used on achievements page)
+// ===========================================
+
+export interface Stat {
+  icon: "download" | "trophy" | "zap" | "users";
+  value: string;
+  label: string;
+  description: string;
+}
+
+export const stats: Stat[] = [
+  {
+    icon: "download",
+    value: "400+",
+    label: "Weekly Downloads",
+    description: "x402 protocol adoption",
+  },
+  {
+    icon: "trophy",
+    value: "7+",
+    label: "Hackathon Wins",
+    description: "Aptos, ETHGlobal & more",
+  },
+  {
+    icon: "zap",
+    value: "4+",
+    label: "Web3 Products",
+    description: "Shipped to production",
+  },
+  {
+    icon: "users",
+    value: "10+",
+    label: "Project Contributions",
+    description: "Open source & client builds",
+  },
+];
+
+// ===========================================
+// TIMELINE DATA (used on about page)
+// ===========================================
+
+export interface TimelineEvent {
+  year: string;
+  title: string;
+  description: string;
+  icon: "briefcase" | "award" | "graduation";
+  type: "work" | "achievement" | "education";
+}
+
+export const timelineEvents: TimelineEvent[] = [
+  {
+    year: "2025",
+    title: "Co-founded DonaLabs",
+    description:
+      "Aptos Accelerator alum (AptosX402). Building x402 micropayments protocol with 400+ weekly downloads.",
+    icon: "briefcase",
+    type: "work",
+  },
+  {
+    year: "2025",
+    title: "Hackathon Wins",
+    description:
+      "Won at Aptos Hackathon with HypeFlow AI. MSME $14K grant recipient with EnerXchange.",
+    icon: "award",
+    type: "achievement",
+  },
+  {
+    year: "2025",
+    title: "Full Stack at Rewardsy",
+    description: "Built location-based rewards platform handling 10K+ daily transactions.",
+    icon: "briefcase",
+    type: "work",
+  },
+  {
+    year: "2024",
+    title: "Frontend Developer",
+    description:
+      "Stealth startup. Delivered fast, pixel-perfect implementations at production scale.",
+    icon: "briefcase",
+    type: "work",
+  },
+  {
+    year: "2023-2024",
+    title: "Lead UI/UX Designer",
+    description: "IKnowSpots. Built design system from scratch, improved conversion by 25%.",
+    icon: "briefcase",
+    type: "work",
+  },
+  {
+    year: "2023",
+    title: "Started Coding Journey",
+    description: "Fell in love with building. First projects in React and Node.js.",
+    icon: "graduation",
+    type: "education",
+  },
+];
+
+// ===========================================
+// ABOUT PAGE STATS (sidebar stats)
+// ===========================================
+
+export const aboutStats = [
+  { value: "3+", label: "Years Building" },
+  { value: "10+", label: "Products Shipped" },
+  { value: "400+", label: "Weekly Downloads" },
+  { value: "7+", label: "Hackathon Wins" },
+];

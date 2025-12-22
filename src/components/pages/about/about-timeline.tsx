@@ -1,54 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap, Award, LucideIcon } from "lucide-react";
 import { FadeInView } from "@/components/ui/motion";
 import { GeometricShape } from "@/components/ui/shapes";
+import { timelineEvents } from "@/lib/data";
 
-const timelineEvents = [
-  {
-    year: "2025",
-    title: "Co-founded DonaLabs",
-    description: "Aptos Accelerator alum (AptosX402). Building x402 micropayments protocol with 400+ weekly downloads.",
-    icon: Briefcase,
-    type: "work",
-  },
-  {
-    year: "2025",
-    title: "Hackathon Wins",
-    description: "Won at Aptos Hackathon with HypeFlow AI. MSME $14K grant recipient with EnerXchange.",
-    icon: Award,
-    type: "achievement",
-  },
-  {
-    year: "2025",
-    title: "Full Stack at Rewardsy",
-    description: "Built location-based rewards platform handling 10K+ daily transactions.",
-    icon: Briefcase,
-    type: "work",
-  },
-  {
-    year: "2024",
-    title: "Frontend Developer",
-    description: "Stealth startup. Delivered fast, pixel-perfect implementations at production scale.",
-    icon: Briefcase,
-    type: "work",
-  },
-  {
-    year: "2023-2024",
-    title: "Lead UI/UX Designer",
-    description: "IKnowSpots. Built design system from scratch, improved conversion by 25%.",
-    icon: Briefcase,
-    type: "work",
-  },
-  {
-    year: "2023",
-    title: "Started Coding Journey",
-    description: "Fell in love with building. First projects in React and Node.js.",
-    icon: GraduationCap,
-    type: "education",
-  },
-];
+const iconMap: Record<string, LucideIcon> = {
+  briefcase: Briefcase,
+  award: Award,
+  graduation: GraduationCap,
+};
 
 export function AboutTimeline() {
   return (
@@ -73,38 +35,41 @@ export function AboutTimeline() {
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-foreground/20 -translate-x-1/2" />
 
           <div className="space-y-12">
-            {timelineEvents.map((event, index) => (
-              <FadeInView
-                key={index}
-                delay={index * 0.1}
-                direction={index % 2 === 0 ? "right" : "left"}
-              >
-                <div
-                  className={`flex items-start gap-8 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+            {timelineEvents.map((event, index) => {
+              const Icon = iconMap[event.icon];
+              return (
+                <FadeInView
+                  key={index}
+                  delay={index * 0.1}
+                  direction={index % 2 === 0 ? "right" : "left"}
                 >
-                  {/* Content */}
                   <div
-                    className={`flex-1 ${
-                      index % 2 === 0 ? "md:text-right md:pr-12" : "md:text-left md:pl-12"
-                    } pl-12 md:pl-0`}
+                    className={`flex items-start gap-8 ${
+                      index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                   >
-                    <span className="font-mono text-sm text-foreground/60">{event.year}</span>
-                    <h3 className="text-xl font-bold mt-1 mb-2">{event.title}</h3>
-                    <p className="text-foreground/70">{event.description}</p>
-                  </div>
+                    {/* Content */}
+                    <div
+                      className={`flex-1 ${
+                        index % 2 === 0 ? "md:text-right md:pr-12" : "md:text-left md:pl-12"
+                      } pl-12 md:pl-0`}
+                    >
+                      <span className="font-mono text-sm text-foreground/60">{event.year}</span>
+                      <h3 className="text-xl font-bold mt-1 mb-2">{event.title}</h3>
+                      <p className="text-foreground/70">{event.description}</p>
+                    </div>
 
-                  {/* Icon node */}
-                  <div className="absolute left-0 md:left-1/2 -translate-x-1/2 w-10 h-10 border-2 border-foreground bg-background flex items-center justify-center">
-                    <event.icon className="w-5 h-5" />
-                  </div>
+                    {/* Icon node */}
+                    <div className="absolute left-0 md:left-1/2 -translate-x-1/2 w-10 h-10 border-2 border-foreground bg-background flex items-center justify-center">
+                      <Icon className="w-5 h-5" />
+                    </div>
 
-                  {/* Empty space for alignment */}
-                  <div className="hidden md:block flex-1" />
-                </div>
-              </FadeInView>
-            ))}
+                    {/* Empty space for alignment */}
+                    <div className="hidden md:block flex-1" />
+                  </div>
+                </FadeInView>
+              );
+            })}
           </div>
 
           {/* End dot */}
