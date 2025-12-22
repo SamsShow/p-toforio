@@ -181,6 +181,23 @@ export const experiences: Experience[] = [
 // Projects data - all Web3 focused (matches 50% Web3 emphasis)
 export const projects: Project[] = [
   {
+    id: "aptosx402",
+    title: "AptosX402 (DonaLabs)",
+    tagline: "Micropayments protocol built in the Aptos Accelerator",
+    problem:
+      "Developers need a reliable way to stream small-value payments on Aptos without writing custom settlement logic each time.",
+    solution:
+      "Built x402, a reusable micropayments protocol with SDKs and hooks for drop-in settlement, receipts, and usage metering on Aptos.",
+    impact:
+      "Accelerator project with 400+ weekly downloads, handling production traffic for early adopters and demoed to Aptos cohort.",
+    techStack: ["Aptos", "Move", "TypeScript", "Next.js", "Framer Motion"],
+    metrics: ["AptosX402 Prize $5K", "400+ Weekly Downloads", "Production Integrations"],
+    links: {
+      github: "https://github.com",
+    },
+    type: "web3",
+  },
+  {
     id: "hypeflow",
     title: "HypeFlow AI",
     tagline: "AI-powered sentiment trading on Aptos",
@@ -225,7 +242,7 @@ export const projects: Project[] = [
     impact:
       "Reduced average swap costs by 35% compared to direct DEX usage. Processing $500K+ monthly volume in testing.",
     techStack: ["1inch Fusion+", "QuickNode", "Next.js", "TypeScript", "Wagmi"],
-    metrics: ["35% Cost Reduction", "$500K+ Volume", "MEV Protected"],
+    metrics: ["35% Cost Reduction", "$2K Prize", "MEV Protected"],
     links: {
       github: "https://github.com",
     },

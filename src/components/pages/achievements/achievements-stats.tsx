@@ -13,7 +13,7 @@ const stats = [
   },
   {
     icon: Trophy,
-    value: "3+",
+    value: "7+",
     label: "Hackathon Wins",
     description: "Aptos, ETHGlobal & more",
   },
@@ -25,9 +25,9 @@ const stats = [
   },
   {
     icon: Users,
-    value: "10K+",
-    label: "Daily Transactions",
-    description: "Rewardsy platform",
+    value: "10+",
+    label: "Project Contributions",
+    description: "Open source & client builds",
   },
 ];
 
