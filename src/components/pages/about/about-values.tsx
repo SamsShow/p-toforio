@@ -21,7 +21,7 @@ const values = [
     icon: Zap,
     title: "Performance Obsessed",
     description:
-      "Speed is a feature. From 95+ PageSpeed scores to gas-optimized smart contracts, I sweat the details that users feel.",
+      "Speed is a feature. From fast loads to gas-optimized smart contracts, I sweat the details that users feel.",
   },
   {
     icon: Lightbulb,

@@ -156,7 +156,7 @@ export const experiences: Experience[] = [
     type: "web2",
     highlights: [
       "Delivered pixel-perfect UI implementations from Figma designs",
-      "Achieved 95+ PageSpeed scores across all core metrics",
+      "Scaled frontends to 10K+ daily transactions",
       "Built component library reducing development time by 40%",
       "Implemented complex animations and micro-interactions",
     ],
@@ -183,15 +183,15 @@ export const projects: Project[] = [
   {
     id: "hypeflow",
     title: "HypeFlow AI",
-    tagline: "AI-powered DeFi yield optimization on Aptos",
+    tagline: "AI-powered sentiment trading on Aptos",
     problem:
-      "DeFi users struggle to optimize yields across multiple protocols, losing potential returns to inefficient capital allocation.",
+      "Traders miss fast-moving market sentiment shifts on crypto Twitter, leading to late entries and exits.",
     solution:
-      "Built an AI agent that analyzes on-chain data in real-time, automatically rebalancing positions across Aptos DeFi protocols for optimal yield.",
+      "Built an AI agent that ingests Twitter streams, scores sentiment in real time, and auto-executes trades on Aptos based on momentum signals.",
     impact:
-      "Winner at Aptos Hackathon. Demonstrated 23% higher yields compared to static strategies in backtesting.",
+      "Winner at Aptos Hackathon. Demonstrated ~23% better simulated returns versus a static strategy using sentiment-driven entries/exits.",
     techStack: ["Aptos", "Move", "TypeScript", "OpenAI", "Next.js"],
-    metrics: ["Hackathon Winner", "23% Yield Improvement", "Real-time Analysis"],
+    metrics: ["Hackathon Winner ($4K)", "23% Sentiment Edge", "Real-time Twitter Signals"],
     links: {
       github: "https://github.com",
     },
@@ -206,9 +206,9 @@ export const projects: Project[] = [
     solution:
       "Smart contract marketplace enabling P2P energy trading with Chainlink oracles for real-time pricing and automated settlement.",
     impact:
-      "ETHGlobal finalist. Enables 40% better returns for energy producers compared to traditional grid buyback.",
+      "Selected for MSME grant ($14K). Enables 40% better returns for energy producers compared to traditional grid buyback.",
     techStack: ["Solidity", "Chainlink", "Next.js", "Hardhat", "The Graph"],
-    metrics: ["ETHGlobal Finalist", "40% Better Returns", "P2P Settlement"],
+    metrics: ["MSME $14K Grant", "40% Better Returns", "P2P Settlement"],
     links: {
       github: "https://github.com",
     },

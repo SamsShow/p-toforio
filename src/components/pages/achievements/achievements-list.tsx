@@ -11,9 +11,9 @@ const achievements = [
     title: "Aptos Hackathon Winner",
     project: "HypeFlow AI",
     description:
-      "Built an AI-powered DeFi yield optimizer on Aptos. The project demonstrated 23% higher yields compared to static strategies.",
+      "Built an AI-powered Twitter sentiment trading agent on Aptos. The project demonstrated ~23% better simulated returns versus a static strategy.",
     year: "2024",
-    tags: ["1st Place", "Aptos", "AI/DeFi"],
+    tags: ["1st Place", "Aptos", "AI/Sentiment"],
   },
   {
     icon: Award,
@@ -44,12 +44,12 @@ const achievements = [
   },
   {
     icon: Target,
-    title: "95+ PageSpeed Scores",
-    project: "Multiple Projects",
+    title: "10K+ Daily Transactions",
+    project: "Rewardsy Platform",
     description:
-      "Consistently delivered high-performance frontends across stealth startup and personal projects, setting the bar for web vitals.",
+      "Scaled the rewards platform to handle 10K+ daily transactions with reliable UX.",
     year: "2023",
-    tags: ["Performance", "Frontend"],
+    tags: ["Scale", "Frontend"],
   },
   {
     icon: Flag,

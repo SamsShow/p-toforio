@@ -53,7 +53,7 @@ export function AboutStory() {
               <StaggerItem>
                 <p>
                   But Web3 is only half the story. I&apos;ve shipped location-based reward 
-                  platforms, optimized frontends to 95+ PageSpeed scores, and led design 
+                  platforms, scaled frontends to 10K+ daily transactions, and led design 
                   systems from zero. I believe great products live at the intersection 
                   of engineering excellence and design craft.
                 </p>
@@ -96,8 +96,8 @@ export function AboutStory() {
               </FadeInView>
               <FadeInView delay={0.5}>
                 <div className="border-2 border-foreground p-6 text-center">
-                  <p className="font-mono text-4xl font-bold">50%</p>
-                  <p className="text-sm text-foreground/60 mt-2">Web3 Focus</p>
+                  <p className="font-mono text-4xl font-bold">7+</p>
+                  <p className="text-sm text-foreground/60 mt-2">Hackathon Wins</p>
                 </div>
               </FadeInView>
             </div>

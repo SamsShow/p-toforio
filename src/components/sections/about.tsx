@@ -91,10 +91,10 @@ export function About() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                      95+
+                      5+
                     </motion.p>
                     <p className="text-background/60 text-sm mt-1">
-                      PageSpeed scores
+                      Open Source Contributions
                     </p>
                   </div>
                 </StaggerItem>

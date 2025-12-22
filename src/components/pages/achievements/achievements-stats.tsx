@@ -19,9 +19,9 @@ const stats = [
   },
   {
     icon: Zap,
-    value: "95+",
-    label: "PageSpeed Score",
-    description: "Performance excellence",
+    value: "4+",
+    label: "Web3 Products",
+    description: "Shipped to production",
   },
   {
     icon: Users,

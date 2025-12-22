@@ -5,6 +5,7 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { fadeUp } from "@/lib/animations";
 import { GeometricShape, GridPattern, CornerAccent } from "@/components/ui/shapes";
+import { Cover } from "@/components/ui/cover";
 
 export function Hero() {
   return (
@@ -55,7 +56,7 @@ export function Hero() {
               <br />
               infrastructure &
               <br />
-              <span className="text-foreground/40">premium interfaces.</span>
+              <Cover className="text-foreground/40">premium interfaces.</Cover>
             </motion.h1>
 
             {/* Animated underline */}
