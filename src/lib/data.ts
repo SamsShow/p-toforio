@@ -298,10 +298,10 @@ export const skills: SkillCategory[] = [
 
 // Social links
 export const socialLinks = {
-  github: "https://github.com/sakshamtyagi",
-  linkedin: "https://linkedin.com/in/sakshamtyagi",
-  email: "saksham@example.com",
-  twitter: "https://twitter.com/sakshamtyagi",
+  github: "https://github.com/SamsShow",
+  linkedin: "https://www.linkedin.com/in/sakshamtyagi28/",
+  email: "sakshamtyagi2008@gmail.com",
+  twitter: "https://x.com/0xsakshamtyagi",
 };
 
 // Site metadata
