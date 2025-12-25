@@ -222,7 +222,6 @@ export const experiences: Experience[] = [
     type: "web2",
     highlights: [
       "Delivered pixel-perfect UI implementations from Figma designs",
-      "Scaled frontends to 10K+ daily transactions",
       "Built component library reducing development time by 40%",
       "Implemented complex animations and micro-interactions",
     ],
@@ -259,7 +258,7 @@ export const projects: Project[] = [
     techStack: ["Aptos", "Move", "TypeScript", "Next.js", "Framer Motion"],
     metrics: ["AptosX402 Prize $5K", "400+ Weekly Downloads", "Production Integrations"],
     links: {
-      github: "https://github.com",
+      github: "https://github.com/adipundir/Aptos-x402",
     },
     type: "web3",
   },
@@ -276,7 +275,7 @@ export const projects: Project[] = [
     techStack: ["Aptos", "Move", "TypeScript", "OpenAI", "Next.js"],
     metrics: ["Hackathon Winner ($4K)", "23% Sentiment Edge", "Real-time Twitter Signals"],
     links: {
-      github: "https://github.com",
+      github: "https://github.com/SamsShow/Hyperflow",
     },
     type: "web3",
   },
@@ -293,7 +292,41 @@ export const projects: Project[] = [
     techStack: ["Solidity", "Chainlink", "Next.js", "Hardhat", "The Graph"],
     metrics: ["MSME $14K Grant", "40% Better Returns", "P2P Settlement"],
     links: {
-      github: "https://github.com",
+      github: "https://github.com/SamsShow/EnerXchange-Frontend",
+    },
+    type: "web3",
+  },
+  {
+    id: "aptosx402-poker",
+    title: "AptosX402 Poker",
+    tagline: "LLM agents playing provably fair poker with x402",
+    problem:
+      "Wanted a playground where LLM agents could compete in poker with transparent randomness and real payment stakes.",
+    solution:
+      "Onchain tables where LLM bots join, pay blinds/antes via x402 micropayments, and play with VRF-backed shuffles and instant settlement.",
+    impact:
+      "Showcases agent-vs-agent gameplay with fair pots and automated payouts, highlighting x402 for autonomous actors.",
+    techStack: ["Aptos", "Move", "Next.js", "TypeScript", "Viem"],
+    metrics: ["VRF Shuffles", "Onchain Pots", "Micropayment Tables"],
+    links: {
+      github: "https://github.com/SamsShow/aptosx402_poker",
+    },
+    type: "web3",
+  },
+  {
+    id: "pushindexer",
+    title: "Push x402",
+    tagline: "Indexing on Push Chain with x402 micropayments",
+    problem:
+      "Developers need reliable Push Chain event delivery to apps without polling-heavy architectures.",
+    solution:
+      "Indexer that subscribes to Push Chain events and pushes filtered notifications to webhooks and clients.",
+    impact:
+      "Reduced latency for downstream apps and cut infra costs versus long-polling listeners.",
+    techStack: ["TypeScript", "Next.js", "PushChain", "Supabase", "Webhooks"],
+    metrics: ["Sub-2s Delivery", "Filtered Streams", "Webhook Fanout"],
+    links: {
+      github: "https://github.com/SamsShow/pushindexer",
     },
     type: "web3",
   },
@@ -310,7 +343,75 @@ export const projects: Project[] = [
     techStack: ["1inch Fusion+", "QuickNode", "Next.js", "TypeScript", "Wagmi"],
     metrics: ["35% Cost Reduction", "$2K Prize", "MEV Protected"],
     links: {
-      github: "https://github.com",
+      github: "https://github.com/SamsShow/gassaverx",
+    },
+    type: "web3",
+  },
+  {
+    id: "goalforge",
+    title: "GoalForge",
+    tagline: "Onchain goals with shared incentives",
+    problem:
+      "Teams struggle to keep goals accountable across contributors; updates and payouts are fragmented.",
+    solution:
+      "Smart contract-backed goal boards with milestone escrows, attestations, and automated reward releases.",
+    impact:
+      "Improved milestone completion confidence; reduced disputes by anchoring proof and payouts onchain.",
+    techStack: ["Avalanche", "Move", "Next.js", "TypeScript", "Framer Motion"],
+    metrics: ["Milestone Escrow", "Attestation Proofs", "Squad Goals"],
+    links: {
+      github: "https://github.com/SamsShow/GoalForge",
+    },
+    type: "web3",
+  },
+  {
+    id: "ethdrip",
+    title: "ETHDrip",
+    tagline: "Trade ETH hackathon merch and goodies",
+    problem:
+      "Attendees and fans struggle to buy, sell, or swap limited hackathon merch and goodies in one trusted place.",
+    solution:
+      "Marketplace with ETH payments and swaps for official hackathon merch, gated listings, and provenance onchain.",
+    impact:
+      "Made merch liquidity easy, reduced counterfeit risk, and kept items circulating among the community.",
+    techStack: ["Ethereum", "Solidity", "Next.js", "Wagmi", "Swift"],
+    metrics: ["ETH Purchases", "Swaps/Gated Listings", "Onchain Provenance"],
+    links: {
+      github: "https://github.com/SamsShow/ETHDrip",
+    },
+    type: "web3",
+  },
+  {
+    id: "eduimpactt",
+    title: "EduImpactt",
+    tagline: "Proof-of-learning credentials",
+    problem:
+      "Students cannot easily prove skill progression across cohorts; credentials are siloed.",
+    solution:
+      "Onchain attestations for course milestones with portfolio evidence and instructor verification.",
+    impact:
+      "Helps learners showcase verifiable progress and improves placement signal for partners.",
+    techStack: ["Educhain", "Solidity", "Next.js", "TypeScript", "IPFS"],
+    metrics: ["Onchain Badges", "Verified Milestones", "Portfolio Proof"],
+    links: {
+      github: "https://github.com/SamsShow/eduImpactt",
+    },
+    type: "web3",
+  },
+  {
+    id: "rainrelief",
+    title: "RainRelief",
+    tagline: "Parametric aid payouts",
+    problem:
+      "Disaster relief funds release slowly due to manual verification and opaque criteria.",
+    solution:
+      "Parametric insurance-style triggers using weather oracles to auto-release pooled funds to affected wallets.",
+    impact:
+      "Cuts disbursement time after rainfall thresholds and increases transparency for donors.",
+    techStack: ["Chainlink", "Solidity", "Next.js", "TypeScript"],
+    metrics: ["Oracle Triggers", "Auto Payouts", "Transparent Pools"],
+    links: {
+      github: "https://github.com/SamsShow/RainRelief",
     },
     type: "web3",
   },

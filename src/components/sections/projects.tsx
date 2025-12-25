@@ -61,7 +61,7 @@ export function Projects() {
 
         {/* Project cards */}
         <StaggerContainer className="space-y-6" staggerDelay={0.15}>
-          {projects.map((project) => (
+          {projects.slice(0, 4).map((project) => (
             <StaggerItem key={project.id}>
               <ProjectCard project={project} inverted />
             </StaggerItem>
