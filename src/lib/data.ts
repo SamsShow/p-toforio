@@ -190,7 +190,7 @@ export const experiences: Experience[] = [
     id: "donalabs",
     role: "Co-founder & CPO",
     company: "DonaLabs & AptosX402",
-    period: "2024 — Present",
+    period: "2025 — Present",
     type: "web3",
     highlights: [
       "Aptos Accelerator alum (AptosX402) building next-gen Web3 infrastructure",
@@ -204,7 +204,7 @@ export const experiences: Experience[] = [
     id: "rewardsy",
     role: "Full Stack Developer",
     company: "Rewardsy",
-    period: "2023 — 2024",
+    period: "2024 — 2025",
     type: "web2",
     highlights: [
       "Built location-based rewards platform from 0 to production",
@@ -218,7 +218,7 @@ export const experiences: Experience[] = [
     id: "stealth",
     role: "Frontend Developer",
     company: "Stealth Startup",
-    period: "2023",
+    period: "2024",
     type: "web2",
     highlights: [
       "Delivered pixel-perfect UI implementations from Figma designs",
@@ -231,7 +231,7 @@ export const experiences: Experience[] = [
     id: "iknowspots",
     role: "Lead UI/UX Designer",
     company: "IKnowSpots",
-    period: "2022 — 2023",
+    period: "2023 — 2024",
     type: "design",
     highlights: [
       "Led design system creation from ground up in Figma",
