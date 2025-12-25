@@ -30,6 +30,11 @@ export const metadata: Metadata = {
     "TypeScript",
   ],
   authors: [{ name: "Saksham Tyagi" }],
+  icons: {
+    icon: "/Person.png",
+    shortcut: "/Person.png",
+    apple: "/Person.png",
+  },
   openGraph: {
     title: "Saksham Tyagi — Founder & Engineer",
     description:
