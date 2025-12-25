@@ -55,7 +55,7 @@ export const designCaseStudies: DesignCaseStudy[] = [
     tagline: "Building trust in Web3 through design",
     category: "branding",
     client: "DonaLabs",
-    year: "2024",
+    year: "2025",
     overview:
       "Created a comprehensive brand identity for a Web3 infrastructure company that needed to communicate trust, innovation, and developer-friendliness.",
     challenge:
@@ -67,12 +67,12 @@ export const designCaseStudies: DesignCaseStudy[] = [
     tools: ["Figma", "Illustrator", "After Effects"],
   },
   {
-    id: "hypeflow-dashboard",
-    title: "HypeFlow AI Dashboard",
+    id: "hypeflow",
+    title: "HypeFlow AI",
     tagline: "Simplifying complex AI workflows",
     category: "product",
     client: "HypeFlow",
-    year: "2024",
+    year: "2025",
     overview:
       "Designed a comprehensive dashboard for AI-powered trading automation, making complex data accessible and actionable for users of all experience levels.",
     challenge:
@@ -84,37 +84,103 @@ export const designCaseStudies: DesignCaseStudy[] = [
     tools: ["Figma", "Framer", "Principle"],
   },
   {
-    id: "iknowspots-mobile",
-    title: "IKnowSpots Mobile App",
-    tagline: "Location discovery reimagined",
-    category: "mobile",
-    client: "IKnowSpots",
-    year: "2023",
+    id: "aptosx402-design",
+    title: "AptosX402",
+    tagline: "Designing trust for micropayments",
+    category: "branding",
+    client: "DonaLabs",
+    year: "2025",
     overview:
-      "Complete redesign of a location-based social app, focusing on discovery, community, and seamless navigation.",
+      "Brand identity for the x402 micropayments protocol, emphasizing reliability, speed, and developer clarity across docs and dashboards.",
     challenge:
-      "The existing app had high churn rates. Users found it difficult to discover new spots and engage with the community.",
+      "Needed to communicate low-friction payments while earning trust from developers integrating settlement flows.",
     approach:
-      "Conducted user interviews revealing that discovery was buried. Redesigned the home experience to prioritize a feed-first approach with smart recommendations.",
+      "Built a visual language with precise grids, monochrome base, and neon signal accents. Documented logo lockups, token badges, and UI tokens in Figma.",
     outcome:
-      "Helped grow the user base to 20K+ users. Session duration increased by 65% and daily active users grew by 40%.",
+      "Brand system shipped with the accelerator launch kit and used across marketing site, docs, and SDK examples.",
+    tools: ["Figma", "Illustrator", "After Effects"],
+  },
+  {
+    id: "ref4r",
+    title: "Ref4r Referral Platform",
+    tagline: "Referrals that feel native",
+    category: "product",
+    client: "Ref4r",
+    year: "2024",
+    overview:
+      "Product design for a referral orchestration tool that embeds seamlessly into SaaS onboarding and checkout flows.",
+    challenge:
+      "Teams struggled to add referrals without disrupting funnels or introducing complex reward logic.",
+    approach:
+      "Designed plug-and-play referral widgets, a rules composer for rewards, and clear analytics for cohort performance.",
+    outcome:
+      "Increased referral-driven signups by 28% in pilot cohorts with a drop-in SDK and self-serve setup.",
+    tools: ["Figma", "Framer", "React"],
+  },
+  {
+    id: "rosper",
+    title: "Rosper Social Savings",
+    tagline: "Group saving made simple",
+    category: "mobile",
+    client: "Rosper",
+    year: "2024",
+    overview:
+      "Mobile experience for rotating savings groups with transparent cycles, pooled goals, and automated reminders.",
+    challenge:
+      "Users lacked visibility into group status and payout schedules, reducing trust in the savings flow.",
+    approach:
+      "Introduced cycle timelines, contribution streaks, and safe-guard modals. Simplified onboarding to three steps with ID hints.",
+    outcome:
+      "Retention improved by 22% and missed contributions dropped after adding clarity to schedules and payouts.",
     tools: ["Figma", "Maze", "Lottie"],
   },
   {
-    id: "web3-design-system",
-    title: "Web3 Design System",
-    tagline: "Consistency at scale for dApps",
+    id: "stickit",
+    title: "Stickit Web3 Goals",
+    tagline: "Onchain goals for squads",
     category: "web",
     year: "2024",
     overview:
-      "Created an open-source design system specifically for Web3 applications, addressing common patterns like wallet connections, transaction states, and token displays.",
+      "Web3 goal-tracking app that lets teams set, fund, and verify milestones together with onchain attestations.",
     challenge:
-      "Web3 apps often have inconsistent UX patterns, leading to user confusion. There was no comprehensive design system addressing Web3-specific needs.",
+      "Teams lacked trustable proof of progress for shared goals; incentives and updates were scattered across tools.",
     approach:
-      "Audited 50+ dApps to identify common patterns and pain points. Created a component library with Figma components and React code in sync.",
+      "Designed a lightweight board with wallet auth, milestone escrow, and proof-of-work uploads that mint attestations.",
     outcome:
-      "Design system has been adopted by 10+ projects and starred 500+ times on GitHub. Featured in Web3 design newsletters.",
-    tools: ["Figma", "Storybook", "React"],
+      "Improved goal completion confidence and reduced disputes by anchoring updates and payouts onchain.",
+    tools: ["Figma", "Framer", "React"],
+  },
+  {
+    id: "bugbounty",
+    title: "BugBounty Hub",
+    tagline: "Clarity for researchers and teams",
+    category: "web",
+    year: "2023",
+    overview:
+      "Platform UX for security submissions with transparent severity tiers, SLAs, and duplicate detection guidance.",
+    challenge:
+      "Researchers lacked clear program rules while teams struggled to triage and respond consistently.",
+    approach:
+      "Created guided submission flows, severity calculators, and response playbooks surfaced inline for triagers.",
+    outcome:
+      "Reduced invalid submissions by 18% and improved median first response time for verified reports.",
+    tools: ["Figma", "FigJam", "React"],
+  },
+  {
+    id: "neighborgood",
+    title: "NeighborGood",
+    tagline: "Hyperlocal help marketplace",
+    category: "product",
+    year: "2023",
+    overview:
+      "Designed a marketplace for neighbors to request and offer micro-tasks with trust signals and availability windows.",
+    challenge:
+      "Users hesitated to post requests without trust cues; providers needed clear scope and timing before accepting.",
+    approach:
+      "Introduced verified profiles, proximity badges, scoped task templates, and calendar-based commitments.",
+    outcome:
+      "Task acceptance rates increased by 24% and cancellations declined after adding clearer expectations.",
+    tools: ["Figma", "Framer", "React"],
   },
 ];
 
