@@ -65,23 +65,25 @@ export const designCaseStudies: DesignCaseStudy[] = [
     outcome:
       "The new brand helped DonaLabs secure a spot in the Aptos Accelerator. Brand assets have been used across 50+ touchpoints including documentation, pitch decks, and developer tools.",
     tools: ["Figma", "Illustrator", "After Effects"],
+    link: "https://www.figma.com/design/L8FCR7VOSRkT6iqO7ABdLv/Donalabs-Brand-Identity?node-id=0-1&t=dTljEy6iJLOqOpID-1",
   },
   {
-    id: "hypeflow",
-    title: "HypeFlow AI",
-    tagline: "Simplifying complex AI workflows",
+    id: "ref3r",
+    title: "Ref3r Referral Platform",
+    tagline: "Referrals that feel native",
     category: "product",
-    client: "HypeFlow",
-    year: "2025",
+    client: "Ref3r",
+    year: "2024",
     overview:
-      "Designed a comprehensive dashboard for AI-powered trading automation, making complex data accessible and actionable for users of all experience levels.",
+      "Product design for a referral orchestration tool that embeds seamlessly into SaaS onboarding and checkout flows.",
     challenge:
-      "Users needed to monitor multiple data streams, AI predictions, and trading signals simultaneously without feeling overwhelmed by information overload.",
+      "Teams struggled to add referrals without disrupting funnels or introducing complex reward logic.",
     approach:
-      "Implemented a card-based modular interface with progressive disclosure. Users can customize their view while defaults provide a sensible starting point.",
+      "Designed plug-and-play referral widgets, a rules composer for rewards, and clear analytics for cohort performance.",
     outcome:
-      "40% reduction in time-to-action for users. Dashboard is now used by 15K+ weekly active users with a 4.8/5 satisfaction rating.",
-    tools: ["Figma", "Framer", "Principle"],
+      "Increased referral-driven signups by 28% in pilot cohorts with a drop-in SDK and self-serve setup.",
+    tools: ["Figma", "Framer", "React"],
+    link: "https://www.figma.com/design/bQYtKEm828oMJ69GmFZWh1/Ref3r?node-id=7-3411&t=GNADAEu6Fnspqz1N-1",
   },
   {
     id: "aptosx402-design",
@@ -101,21 +103,21 @@ export const designCaseStudies: DesignCaseStudy[] = [
     tools: ["Figma", "Illustrator", "After Effects"],
   },
   {
-    id: "ref4r",
-    title: "Ref4r Referral Platform",
-    tagline: "Referrals that feel native",
+    id: "hypeflow",
+    title: "HypeFlow AI",
+    tagline: "Simplifying complex AI workflows",
     category: "product",
-    client: "Ref4r",
-    year: "2024",
+    client: "HypeFlow",
+    year: "2025",
     overview:
-      "Product design for a referral orchestration tool that embeds seamlessly into SaaS onboarding and checkout flows.",
+      "Designed a comprehensive dashboard for AI-powered trading automation, making complex data accessible and actionable for users of all experience levels.",
     challenge:
-      "Teams struggled to add referrals without disrupting funnels or introducing complex reward logic.",
+      "Users needed to monitor multiple data streams, AI predictions, and trading signals simultaneously without feeling overwhelmed by information overload.",
     approach:
-      "Designed plug-and-play referral widgets, a rules composer for rewards, and clear analytics for cohort performance.",
+      "Implemented a card-based modular interface with progressive disclosure. Users can customize their view while defaults provide a sensible starting point.",
     outcome:
-      "Increased referral-driven signups by 28% in pilot cohorts with a drop-in SDK and self-serve setup.",
-    tools: ["Figma", "Framer", "React"],
+      "40% reduction in time-to-action for users. Dashboard is now used by 15K+ weekly active users with a 4.8/5 satisfaction rating.",
+    tools: ["Figma", "Framer", "Principle"],
   },
   {
     id: "rosper",

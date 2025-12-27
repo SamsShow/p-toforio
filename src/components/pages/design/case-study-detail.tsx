@@ -38,6 +38,9 @@ interface CaseStudyDetailProps {
 
 export function CaseStudyDetail({ study }: CaseStudyDetailProps) {
   const CategoryIcon = categoryIcons[study.category];
+  const figmaEmbedUrl = study.link
+    ? `https://www.figma.com/embed?embed_host=share&url=${encodeURIComponent(study.link)}`
+    : null;
 
   return (
     <>
@@ -107,8 +110,21 @@ export function CaseStudyDetail({ study }: CaseStudyDetailProps) {
         <div className="max-w-6xl mx-auto">
           <FadeInView>
             <div className="aspect-[16/9] border-2 border-foreground bg-foreground/5 relative overflow-hidden">
-              {/* Decorative grid */}
-              <div className="absolute inset-0 opacity-10">
+              {figmaEmbedUrl ? (
+                <iframe
+                  title="Figma project preview"
+                  src={figmaEmbedUrl}
+                  className="absolute inset-0 w-full h-full"
+                  allowFullScreen
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="font-mono text-foreground/30 text-sm">Project Preview</p>
+                </div>
+              )}
+
+              {/* Subtle grid overlay for visual context */}
+              <div className="pointer-events-none absolute inset-0 opacity-10">
                 <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                   <defs>
                     <pattern id="hero-grid" width="5" height="5" patternUnits="userSpaceOnUse">
@@ -119,14 +135,9 @@ export function CaseStudyDetail({ study }: CaseStudyDetailProps) {
                 </svg>
               </div>
 
-              {/* Placeholder text */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="font-mono text-foreground/30 text-sm">Project Preview</p>
-              </div>
-
               {/* Corner accents */}
-              <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-foreground/20" />
-              <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-foreground/20" />
+              <div className="pointer-events-none absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-foreground/20" />
+              <div className="pointer-events-none absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-foreground/20" />
             </div>
           </FadeInView>
         </div>
